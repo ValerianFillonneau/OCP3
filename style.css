@@ -29,5 +29,18 @@
   src: local(""), url("../fonts/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/shrikhand-v6-latin-regular.woff2") format("woff2"), url("../fonts/shrikhand-v6-latin-regular.woff") format("woff"), url("../fonts/shrikhand-v6-latin-regular.ttf") format("truetype"), url("../fonts/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
   /* Legacy iOS */
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.restaurant__choix {
+  position: relative;
+}
+
+.pin {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

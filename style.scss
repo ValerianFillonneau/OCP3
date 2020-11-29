@@ -1,1 +1,19 @@
-@import "./base/fonts.scss"
+@import "./base/fonts.scss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+.restaurant{
+    &__choix{
+        position: relative;
+    }
+
+}
+
+.pin{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
