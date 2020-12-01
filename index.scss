@@ -1,5 +1,6 @@
 @import "./base/fonts.scss";
 @import "./base/variables.scss";
+@import "./base/typography.scss";
 
 html{
     scroll-behavior: smooth;
@@ -8,6 +9,14 @@ html{
 
 @media all and (max-width: 1024px){
 
+    .logo{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 45px;
+    }
+
     body{
         margin: 0;
     }
@@ -15,8 +24,6 @@ html{
     header{
         width: $section-width;
         background-color: $section-background;
-        font-family: $font-text;
-        text-align: center;
         padding-bottom: 80px;
         .band{
             background: linear-gradient(0deg, #E9E9E9, #C4C4C4);
@@ -25,8 +32,6 @@ html{
         .location{
             padding: 20px 20px;
             background-color: #E9E9E9;
-            font-family: $font-text;
-            font-size: 1.25em;
             .fas.fa-map-marker-alt{
                 margin-right: 20px;
                 height: 1px;
@@ -37,29 +42,113 @@ html{
             margin: auto;
             margin-top: 45px;
             margin-bottom: 15px;
-            font-weight: 700;
         }
         p{
             width: 80%;
             margin: auto;
             margin-bottom: 60px;
-            font-size: 1.3em;
         }
         a{
-            background: linear-gradient(180deg, #FF79DA, #9356DC);
-            text-decoration: none;
-            font-size: 1.25em;
-            padding: 20px;
-            color: white;
+            background: linear-gradient(170deg, $secondary-color, $primary-color);
+            padding: 20px 30px 20px 30px;
             border-radius: 40px;
-            box-shadow: 5px 2px 10px  lightgray;
+            box-shadow: $shadow-box;
         }
     }
 
+    h2{
+        margin-left: 15px;
+    }
+
+    .function{
+        padding-inline-start: 25px;
+        padding-inline-end: 25px;
+        :hover{
+            background-color: $hover-color;
+        }
+        .iconelist{
+            :hover{
+                background-color: $primary-color;
+            }
+        }
+        
+        &__1{
+            background-color: $section-background;
+            margin-bottom: 25px;
+            padding: 30px 40px 25px 40px;
+            border-radius: 20px;
+            box-shadow: $shadow-box;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .numberlist{
+            background-color: $primary-color;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 0 25px 0 -55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .textlist{
+            margin-left: 25px;
+        }
+            }
+        &__2{
+            background-color: $section-background;
+            margin-bottom: 25px;
+            padding: 30px 40px 25px 40px;
+            border-radius: 20px;
+            box-shadow: $shadow-box;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .numberlist{
+            background-color: $primary-color;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 0 25px 0 -55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .textlist{
+            margin-left: 25px;
+        }
+            }
+        &__3{
+            background-color: $section-background;
+            margin-bottom: 25px;
+            padding: 30px 40px 25px 40px;
+            border-radius: 20px;
+            box-shadow: $shadow-box;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .numberlist{
+            background-color: $primary-color;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 0 25px 0 -55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .textlist{
+            margin-left: 25px;
+        }
+            }
+    }
+
     .restaurant{
+
         &__choix{
             position: relative;
         }
+
 
     }
 

@@ -1,0 +1,69 @@
+header{
+    font-family: $font-text;
+    text-align: center;
+
+    .location{
+        font-family: $font-text;
+        font-size: 1.25em;
+        font-weight: 700;
+    }
+    h1{
+        font-weight: 700;
+    }
+    p{
+        font-size: 1.3em;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.25em;
+        color: white;
+    }
+}
+
+h2{
+    font-size: 2.25em;
+    font-family: $font-title;
+    font-weight: 700;
+}
+
+.function{
+    list-style-type: none;
+    font-family: $font-text;
+    font-weight: 700;
+    &__1{
+        text-align: center;
+        font-size: 1.3em;
+        .numberlist{
+        color: white;
+        font-weight: normal;
+        font-size: 0.75em;
+        }
+    .textlist{
+        text-align: center;
+    }
+        }
+    &__2{
+        text-align: center;
+        font-size: 1.3em;
+        .numberlist{
+        color: white;
+        font-weight: normal;
+        font-size: 0.75em;
+        }
+    .textlist{
+        text-align: center;
+    }
+        }
+    &__3{
+        text-align: center;
+        font-size: 1.3em;
+        .numberlist{
+        color: white;
+        font-weight: normal;
+        font-size: 0.75em;
+        }
+    .textlist{
+        text-align: center;
+    }
+        }
+}
