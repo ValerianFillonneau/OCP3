@@ -1,0 +1,23 @@
+@mixin function {
+    background-color: $section-background;
+            margin-bottom: 25px;
+            padding: 30px 40px 25px 40px;
+            border-radius: 20px;
+            box-shadow: $shadow-box;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .numberlist{
+            background-color: $primary-color;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            margin: 0 25px 0 -55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .textlist{
+            margin-left: 25px;
+        }
+}

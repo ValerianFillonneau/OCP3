@@ -1,6 +1,7 @@
 @import "./base/fonts.scss";
-@import "./base/variables.scss";
+@import "./utils/variables.scss";
 @import "./base/typography.scss";
+@import "./utils/mixins.scss";
 
 html{
     scroll-behavior: smooth;
@@ -73,74 +74,14 @@ html{
         }
         
         &__1{
-            background-color: $section-background;
-            margin-bottom: 25px;
-            padding: 30px 40px 25px 40px;
-            border-radius: 20px;
-            box-shadow: $shadow-box;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            .numberlist{
-            background-color: $primary-color;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            margin: 0 25px 0 -55px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-        .textlist{
-            margin-left: 25px;
+            @include function;
         }
-            }
         &__2{
-            background-color: $section-background;
-            margin-bottom: 25px;
-            padding: 30px 40px 25px 40px;
-            border-radius: 20px;
-            box-shadow: $shadow-box;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            .numberlist{
-            background-color: $primary-color;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            margin: 0 25px 0 -55px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-        .textlist{
-            margin-left: 25px;
+            @include function;
         }
-            }
         &__3{
-            background-color: $section-background;
-            margin-bottom: 25px;
-            padding: 30px 40px 25px 40px;
-            border-radius: 20px;
-            box-shadow: $shadow-box;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            .numberlist{
-            background-color: $primary-color;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            margin: 0 25px 0 -55px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-        .textlist{
-            margin-left: 25px;
+            @include function;
         }
-            }
     }
 
     .restaurant{
