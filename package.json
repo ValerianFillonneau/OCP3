@@ -1,0 +1,21 @@
+{
+  "name": "ocp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch ./sass/main.scss:./public/css/styles.css",
+    "build": "sass ./sass/main.scss:./public/css/style.css --style=compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValerianFillonneau/OCP3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValerianFillonneau/OCP3/issues"
+  },
+  "homepage": "https://github.com/ValerianFillonneau/OCP3#readme"
+}
