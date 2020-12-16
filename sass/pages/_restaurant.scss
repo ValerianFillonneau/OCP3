@@ -72,51 +72,31 @@
             margin-top: 40px;
         }
 
-        &__entrée{
-            &__choix1{
-                @include menu;
-            }
+        .card{
+            @include menu;
+            @include animation-check;
+        }
 
-            &__choix2{
-                @include menu;
-            }
-
-            &__choix3{
-                @include menu;
-            }
-
-            &__choix4{
-                @include menu;
+        .valid{
+            background-color: $tertiary-color;
+            border-radius: 0 15px 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon-check{
+                background-color: white;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .fa-check{
+                    color: $tertiary-color;
+                }
             }
             
-        }
 
-        &__plat{
-            &__choix1{
-                @include menu;
-            }
-
-            &__choix2{
-                @include menu;
-            }
-
-            &__choix3{
-                @include menu;
-            }
-        }
-
-        &__dessert{
-            &__choix1{
-                @include menu;
-            }
-
-            &__choix2{
-                @include menu;
-            }
-
-            &__choix3{
-                @include menu;
-            }
         }
 
         .command{

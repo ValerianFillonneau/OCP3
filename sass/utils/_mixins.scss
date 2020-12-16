@@ -36,28 +36,37 @@
 }
 
 @mixin menu {
+    overflow: hidden;
     display: flex;
-                justify-content: space-between;
-                width: 95%;
-                margin-left: 2.5%;
-                background-color: white;
-                border-radius: 15px;
-                box-shadow: $shadow-box;
-                margin: 0 2.5% 20px 2.5%;
-                .legende{
-                    &__gras{
-                        font-weight: 700;
-                        margin: 0 0 0 15px;
-                    }
-                    p{
-                        margin: 10px 0 10px 15px;
-                        font-size: 18px;
-                    }
-                }
-                .prix{
-                    display: flex;
-                    align-self: flex-end;
-                    margin-right: 20px;
-                    font-weight: 700;
-                }
+    height: 100%;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: $shadow-box;
+    margin: 0 2.5% 20px 2.5%;
+    cursor: pointer;
+    .legende{
+        width: 100%;
+        &__gras{
+            font-weight: 700;
+            margin: 0 0 0 15px;
+        }
+        p{
+            height: 22px;
+            margin: 10px 0 10px 15px;
+            font-size: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .prix{
+        flex: 1 1;
+        text-align: right;
+        display: flex;
+        align-items: flex-end;
+        width: auto;
+        margin-right: 20px;
+        font-weight: 700;
+    }
 }

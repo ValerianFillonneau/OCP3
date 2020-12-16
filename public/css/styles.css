@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header {
   font-family: Roboto, sans-serif;
   text-align: center;
@@ -404,245 +403,76 @@ footer__text {
     font-weight: 100;
     margin-top: 40px;
   }
-  .menu__entrée__choix1 {
+  .menu .card {
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    height: 100%;
     width: 95%;
     margin-left: 2.5%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 3px 5px 10px #9E9D9D;
     margin: 0 2.5% 20px 2.5%;
+    cursor: pointer;
   }
-  .menu__entrée__choix1 .legende__gras {
+  .menu .card .legende {
+    width: 100%;
+  }
+  .menu .card .legende__gras {
     font-weight: 700;
     margin: 0 0 0 15px;
   }
-  .menu__entrée__choix1 .legende p {
+  .menu .card .legende p {
+    height: 22px;
     margin: 10px 0 10px 15px;
     font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
-  .menu__entrée__choix1 .prix {
+  .menu .card .prix {
+    flex: 1 1;
+    text-align: right;
     display: flex;
-    align-self: flex-end;
+    align-items: flex-end;
+    width: auto;
     margin-right: 20px;
     font-weight: 700;
   }
-  .menu__entrée__choix2 {
+  .menu .card .valid {
+    width: 0px;
+    transform: scaleX(1);
+    transition: width 500ms;
+    overflow: hidden;
+  }
+  .menu .card .valid .fa-check {
+    transform: rotate(0deg);
+    transition: transform 500ms;
+  }
+  .menu .card:hover .valid {
+    width: 100px;
+  }
+  .menu .card:hover .valid .fa-check {
+    transform: rotate(360deg);
+    transition: transform 500ms;
+  }
+  .menu .valid {
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;
     display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .valid .icon-check {
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__entrée__choix2 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__entrée__choix2 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__entrée__choix2 .prix {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
     display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
+    justify-content: center;
+    align-items: center;
   }
-  .menu__entrée__choix3 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__entrée__choix3 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__entrée__choix3 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__entrée__choix3 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
-  }
-  .menu__entrée__choix4 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__entrée__choix4 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__entrée__choix4 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__entrée__choix4 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
-  }
-  .menu__plat__choix1 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__plat__choix1 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__plat__choix1 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__plat__choix1 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
-  }
-  .menu__plat__choix2 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__plat__choix2 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__plat__choix2 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__plat__choix2 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
-  }
-  .menu__plat__choix3 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__plat__choix3 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__plat__choix3 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__plat__choix3 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
-  }
-  .menu__dessert__choix1 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__dessert__choix1 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__dessert__choix1 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__dessert__choix1 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
-  }
-  .menu__dessert__choix2 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__dessert__choix2 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__dessert__choix2 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__dessert__choix2 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
-  }
-  .menu__dessert__choix3 {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin-left: 2.5%;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 3px 5px 10px #9E9D9D;
-    margin: 0 2.5% 20px 2.5%;
-  }
-  .menu__dessert__choix3 .legende__gras {
-    font-weight: 700;
-    margin: 0 0 0 15px;
-  }
-  .menu__dessert__choix3 .legende p {
-    margin: 10px 0 10px 15px;
-    font-size: 18px;
-  }
-  .menu__dessert__choix3 .prix {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 20px;
-    font-weight: 700;
+  .menu .valid .icon-check .fa-check {
+    color: #99E2D0;
   }
   .menu .command {
     display: flex;
