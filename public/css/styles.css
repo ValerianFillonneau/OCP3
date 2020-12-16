@@ -20,6 +20,10 @@ header a {
   color: white;
 }
 
+.titre-index {
+  font-family: Roboto, sans-serif;
+}
+
 h2 {
   font-size: 2.25em;
   font-family: Shrikhand, sans-serif;
