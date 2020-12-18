@@ -69,12 +69,35 @@
         h2{
             font-size: 20px;
             font-weight: 100;
-            margin-top: 40px;
+            margin: 40px 0 0px 15px;
+        }
+
+        .underline{
+            height: 4px;
+            width: 50px;
+            margin: 5px 0 20px 15px;
+            background-color: $tertiary-color;
         }
 
         .card{
+            opacity: 0;
+            position: relative;
             @include menu;
             @include animation-check;
+            animation: fadein 750ms linear;
+            animation-fill-mode: forwards;
+            &:nth-child(3){
+                animation-delay: 250ms;
+            }
+            &:nth-child(4){
+                animation-delay: 500ms;
+            }
+            &:nth-child(5){
+                animation-delay: 750ms;
+            }
+            &:nth-child(6){
+                animation-delay: 1000ms;
+            }
         }
 
         .valid{

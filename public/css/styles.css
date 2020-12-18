@@ -24,9 +24,7 @@ header a {
 }
 
 h2 {
-  font-size: 2.25em;
-  font-family: Shrikhand, sans-serif;
-  font-weight: 700;
+  font-family: Roboto, sans-serif;
 }
 
 .function {
@@ -89,6 +87,16 @@ footer {
   font-family: Roboto, sans-serif;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -401,9 +409,17 @@ footer__text {
   .menu h2 {
     font-size: 20px;
     font-weight: 100;
-    margin-top: 40px;
+    margin: 40px 0 0px 15px;
+  }
+  .menu .underline {
+    height: 4px;
+    width: 50px;
+    margin: 5px 0 20px 15px;
+    background-color: #99E2D0;
   }
   .menu .card {
+    opacity: 0;
+    position: relative;
     overflow: hidden;
     display: flex;
     height: 100%;
@@ -414,18 +430,23 @@ footer__text {
     box-shadow: 3px 5px 10px #9E9D9D;
     margin: 0 2.5% 20px 2.5%;
     cursor: pointer;
+    animation: fadein 750ms linear;
+    animation-fill-mode: forwards;
   }
   .menu .card .legende {
-    width: 100%;
+    width: 370px;
   }
   .menu .card .legende__gras {
     font-weight: 700;
     margin: 0 0 0 15px;
   }
   .menu .card .legende p {
+    width: auto;
+    white-space: nowrap;
     height: 22px;
     margin: 10px 0 10px 15px;
     font-size: 18px;
+    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -448,12 +469,30 @@ footer__text {
     transform: rotate(0deg);
     transition: transform 500ms;
   }
+  .menu .card .legende > p {
+    width: 100%;
+  }
   .menu .card:hover .valid {
     width: 100px;
   }
   .menu .card:hover .valid .fa-check {
     transform: rotate(360deg);
     transition: transform 500ms;
+  }
+  .menu .card:hover .legende > p {
+    width: 288px;
+  }
+  .menu .card:nth-child(3) {
+    animation-delay: 250ms;
+  }
+  .menu .card:nth-child(4) {
+    animation-delay: 500ms;
+  }
+  .menu .card:nth-child(5) {
+    animation-delay: 750ms;
+  }
+  .menu .card:nth-child(6) {
+    animation-delay: 1000ms;
   }
   .menu .valid {
     background-color: #99E2D0;

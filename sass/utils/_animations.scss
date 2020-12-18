@@ -10,6 +10,9 @@
             transition: transform 500ms;
         }
     }
+    .legende>p{
+        width: 100%;
+    }
     &:hover{
         .valid{
             width: 100px;
@@ -18,5 +21,19 @@
                 transition: transform 500ms;
             }
         }
+        .legende>p{
+            width: 288px;
+        }
+    }
+}
+
+@keyframes fadein{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
