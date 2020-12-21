@@ -9,6 +9,7 @@
             align-items: center;
             .numberlist{
             background-color: $primary-color;
+            color: white;
             height: 30px;
             width: 30px;
             border-radius: 50%;
@@ -20,19 +21,6 @@
         .textlist{
             margin-left: 25px;
         }
-}
-
-@mixin typo_function {
-    text-align: center;
-        font-size: 1.3em;
-        .numberlist{
-        color: white;
-        font-weight: normal;
-        font-size: 0.75em;
-        }
-    .textlist{
-        text-align: center;
-    }
 }
 
 @mixin menu {
@@ -66,8 +54,34 @@
         text-align: right;
         display: flex;
         align-items: flex-end;
+        justify-content: flex-end;
         width: auto;
         margin-right: 20px;
         font-weight: 700;
     }
+}
+
+@mixin mail {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0 15px 0;
+        input{
+            outline: none;
+            width: 90%;
+            padding: 10px;
+            border-radius: 20px;
+            border-color: $secondary-color;
+            border-style: none;
+            box-shadow: $shadow-box;
+        }
+        textarea{
+            outline: none;
+            width: 90%;
+            padding: 10px;
+            border-radius: 20px;
+            border-color: $secondary-color;
+            border-style: none;
+            box-shadow: $shadow-box;
+        }
 }

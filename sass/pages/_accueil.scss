@@ -21,8 +21,8 @@ html{
         background-color: $section-background;
         padding-bottom: 80px;
         .band{
-            background: linear-gradient(0deg, #E9E9E9, #C4C4C4);
-            height: 7px;
+            background: linear-gradient(0deg, #E9E9E9, #c4c4c4);
+            height: 9px;
         }
         .location{
             padding: 20px 20px;
@@ -66,14 +66,14 @@ html{
                     color: $primary-color;
             }
         }
-        &__1{
+        &__card{
             @include function;
-        }
-        &__2{
-            @include function;
-        }
-        &__3{
-            @include function;
+            &__text{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 
@@ -166,6 +166,7 @@ footer{
         padding-left: 20px;
         margin-block-end: 0;
         li{
+            text-decoration: none;
             display: flex;
             flex-direction: row;
             margin: 15px 0 0 0;
@@ -175,6 +176,9 @@ footer{
             }
             .fa-hands-helping{
                 margin-right: 15px;
+            }
+            .contact{
+                color: white;
             }
         }
     }

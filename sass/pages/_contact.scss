@@ -1,0 +1,84 @@
+.header_contact{
+    width: $section-width;
+    background-color: $section-background;
+    .band{
+        background: linear-gradient(0deg, #E9E9E9, #c4c4c4);
+        height: 9px;
+    }
+    .location{
+        padding: 20px 20px;
+        background-color: #E9E9E9;
+        .fas.fa-map-marker-alt{
+            margin-right: 20px;
+            height: 1px;
+        }
+    }
+}
+
+.mail{
+    &__user{
+        @include mail;
+        }
+    &__object{
+        @include mail;
+    }
+    &__text{
+        @include mail;
+    }
+}
+
+.send{
+    display: flex;
+    justify-content: center;
+    margin: 25px 25% 80px 25%;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(170deg, $secondary-color, $primary-color);
+    padding: 20px 30px 20px 30px;
+    border-radius: 40px;
+    box-shadow: $shadow-box;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-contact{
+    background-color: #494949;
+    color: white;
+    padding: 20px 0 40px 0;
+    ul{
+        list-style-type: none;
+        padding-inline-start: 0;
+        padding-left: 20px;
+        margin-block-end: 0;
+        li{
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            margin: 15px 0 0 0;
+            cursor: pointer;
+            .fa-utensils{
+                margin-right: 18px;
+            }
+            .fa-hands-helping{
+                margin-right: 15px;
+            }
+            .contact{
+                color: white;
+            }
+        }
+    }
+    .logo_footer{
+        display: block;
+        margin: 0 0 20px 20px;
+        padding-top: 20px;
+        height: 20px;
+        filter: invert(100%);
+    }
+    &__text{
+        margin-left: 5px;
+    }
+}
