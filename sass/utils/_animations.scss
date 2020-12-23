@@ -10,8 +10,11 @@
             transition: transform 500ms;
         }
     }
-    .legende>p{
-        width: 100%;
+    .legende{
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &:hover{
         .valid{
@@ -23,6 +26,11 @@
         }
         .prix{
             width: 40px;
+        }
+        .legende{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }

@@ -779,19 +779,23 @@ a {
 }
 .menu .menuchoice .card .legende {
   width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .menuchoice .card .legende__gras {
   font-weight: 700;
   margin: 0 0 0 15px;
 }
 .menu .menuchoice .card .legende p {
+  animation: textreduction 750ms ease-in-out;
   height: 22px;
   width: auto;
   margin: 10px 0 10px 15px;
   font-size: 18px;
-  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .menuchoice .card .prix {
   flex: 1 1;
@@ -813,8 +817,11 @@ a {
   transform: rotate(0deg);
   transition: transform 500ms;
 }
-.menu .menuchoice .card .legende > p {
-  width: 100%;
+.menu .menuchoice .card .legende {
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .menuchoice .card:hover .valid {
   width: 100px;
@@ -826,21 +833,26 @@ a {
 .menu .menuchoice .card:hover .prix {
   width: 40px;
 }
+.menu .menuchoice .card:hover .legende {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .menu .menuchoice .card:nth-child(3) {
   animation-delay: 250ms;
-  min-width: 300px;
+  min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(4) {
   animation-delay: 500ms;
-  min-width: 300px;
+  min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(5) {
   animation-delay: 750ms;
-  min-width: 300px;
+  min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(6) {
   animation-delay: 1000ms;
-  min-width: 300px;
+  min-width: 320px;
 }
 .menu .valid {
   background-color: #99E2D0;
@@ -967,19 +979,23 @@ a {
   }
   .menu .card .legende {
     width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .menu .card .legende__gras {
     font-weight: 700;
     margin: 0 0 0 15px;
   }
   .menu .card .legende p {
+    animation: textreduction 750ms ease-in-out;
     height: 22px;
     width: auto;
     margin: 10px 0 10px 15px;
     font-size: 18px;
-    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .menu .card .prix {
     flex: 1 1;
@@ -1001,8 +1017,11 @@ a {
     transform: rotate(0deg);
     transition: transform 500ms;
   }
-  .menu .card .legende > p {
-    width: 100%;
+  .menu .card .legende {
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .menu .card:hover .valid {
     width: 100px;
@@ -1013,6 +1032,11 @@ a {
   }
   .menu .card:hover .prix {
     width: 40px;
+  }
+  .menu .card:hover .legende {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .menu .card:nth-child(3) {
     animation-delay: 250ms;

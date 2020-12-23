@@ -37,18 +37,22 @@
     cursor: pointer;
     .legende{
         width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         &__gras{
             font-weight: 700;
             margin: 0 0 0 15px;
         }
         p{
+            animation: textreduction 750ms ease-in-out;
             height: 22px;
             width: auto;
             margin: 10px 0 10px 15px;
             font-size: 18px;
-            display: block;
             overflow: hidden;
             text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
     .prix{
