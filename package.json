@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ValerianFillonneau/OCP3/issues"
   },
-  "homepage": "https://github.com/ValerianFillonneau/OCP3#readme"
+  "homepage": "https://github.com/ValerianFillonneau/OCP3#readme",
+  "dependencies": {
+    "postcss": "^8.2.1"
+  }
 }

@@ -754,11 +754,13 @@ a {
   margin: 5px 0 20px 15px;
   background-color: #99E2D0;
 }
+.menu .menu-width {
+  width: 33.33%;
+}
 .menu .menuchoice {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: calc(100% - 20px);
 }
 .menu .menuchoice .card {
   opacity: 0;
@@ -954,6 +956,9 @@ a {
     width: 50px;
     margin: 5px 0 20px 15px;
     background-color: #99E2D0;
+  }
+  .menu .menu-width {
+    width: 100%;
   }
   .menu .menuchoice {
     display: flex;
