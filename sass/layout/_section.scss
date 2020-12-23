@@ -1,0 +1,153 @@
+/* page d'accueil */
+
+.restaurantall{
+    
+    background-color: $section-background;
+    height: 100%;
+    padding: 0 0 45px 0;
+    .restaurant{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__choice{
+            position: relative;
+            height: 100%;
+            width: 40%;
+            border-radius: 15px;
+            background-color: white;
+            margin: 0 5% 0 5%;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            box-shadow: $shadow-box;
+            &__legende{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .etiquette{
+            height: 230px;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+        .legende{
+            display: flex;
+            justify-self: left;
+            margin: 5px 25px 2px 10px;
+        }
+        .legende_gras{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .heart{
+            display: flex;
+            justify-content: flex-end;
+            align-self: left;
+            font-size: 20px;
+            cursor: pointer;
+            .fas{
+                display: none;
+                font-size: 20px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &:hover{
+                .fas{
+                    display: flex;
+                }
+                .far{
+                    display: none;
+                }
+            }
+        }
+        .pin{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: $tertiary-color;
+            color: darken($tertiary-color, $amount: 50%);
+            padding: 10px 15px 10px 15px;
+            border-radius: 3px;
+            box-shadow: 3px 5px 10px  black;
+        }
+    }
+}
+
+@media all and (max-width: 1024px){
+
+    .restaurantall{
+        display: flex;
+        flex-direction: column;
+        background-color: $section-background;
+        height: 100%;
+        padding: 45px 0 45px 0;
+        .restaurant{
+            &__choice{
+                position: relative;
+                height: 100%;
+                width: 90%;
+                border-radius: 15px;
+                background-color: white;
+                margin: 0 5% 0 5%;
+                margin-bottom: 40px;
+                padding-bottom: 15px;
+                box-shadow: $shadow-box;
+                &__legende{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .etiquette{
+                height: 230px;
+                width: 100%;
+                border-radius: 15px 15px 0 0;
+                object-fit: cover;
+            }
+            .legende{
+                display: flex;
+                justify-self: left;
+                margin: 5px 25px 2px 10px;
+            }
+            .legende_gras{
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .heart{
+                display: flex;
+                justify-content: flex-end;
+                align-self: left;
+                font-size: 20px;
+                cursor: pointer;
+                .fas{
+                    display: none;
+                    font-size: 20px;
+                    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &:hover{
+                    .fas{
+                        display: flex;
+                    }
+                    .far{
+                        display: none;
+                    }
+                }
+            }
+            .pin{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background-color: $tertiary-color;
+                color: darken($tertiary-color, $amount: 50%);
+                padding: 10px 15px 10px 15px;
+                border-radius: 3px;
+                box-shadow: 3px 5px 10px  black;
+            }
+        }
+    }
+}

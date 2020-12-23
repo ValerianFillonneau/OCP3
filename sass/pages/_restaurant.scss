@@ -1,29 +1,150 @@
-@media all and (max-width: 1024px){
-
-    .head{
-        &__title{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+.menu{
+    position: relative;
+    z-index: 2;
+    margin-top: -80px;
+    background-color: $section-background;
+    border-radius: 60px 60px 0 0;
+    &__titre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-title;
     }
-
-    .return{
-        color: black;
+    .titreresto{
+        margin-block-start: 0;
+        padding-top: 50px;
+        font-size: 30px;
         margin-left: 20px;
-        font-size: xx-large;
     }
-
-    .bloc{
-        max-width: 100%;
-        z-index: 1;
-        position: relative;
-        &__image{
-            height: 400px;
-            width: 100%;
-            object-fit: cover;
+    .heart{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 40px;
+        cursor: pointer;
+        margin: 20px 40px 0 0;
+        .fas{
+            display: none;
+            font-size: 40px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:hover{
+            .fas{
+                display: flex;
+            }
+            .far{
+                display: none;
+            }
         }
     }
+
+    h2{
+        font-size: 20px;
+        font-weight: 100;
+        margin: 40px 0 0px 15px;
+    }
+
+    .underline{
+        height: 4px;
+        width: 50px;
+        margin: 5px 0 20px 15px;
+        background-color: $tertiary-color;
+    }
+
+    .menuchoice{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+        .card{
+            opacity: 0;
+            position: relative;
+            @include menu;
+            @include animation-check;
+            animation: fadein 750ms linear;
+            animation-fill-mode: forwards;
+            &:nth-child(3){
+                animation-delay: 250ms;
+                min-width: 300px;
+            }
+            &:nth-child(4){
+                animation-delay: 500ms;
+                min-width: 300px;
+
+            }
+            &:nth-child(5){
+                animation-delay: 750ms;
+                min-width: 300px;
+
+            }
+            &:nth-child(6){
+                animation-delay: 1000ms;
+                min-width: 300px;
+
+            }
+        }
+    }
+
+    
+
+    .valid{
+        background-color: $tertiary-color;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon-check{
+            background-color: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-check{
+                color: $tertiary-color;
+            }
+        }
+        
+
+    }
+
+    .command{
+        display: flex;
+        justify-content: center;
+        margin: 50px 25% 80px 25%;
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(170deg, $secondary-color, $primary-color);
+        padding: 20px 30px 20px 30px;
+        border-radius: 40px;
+        box-shadow: $shadow-box;
+
+    }
+
+    .returntop{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 25px 25px 0;
+        .up{
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(170deg, $secondary-color, $primary-color);
+            padding: 20px;
+            box-shadow: $shadow-box;
+        }
+    }
+}
+
+@media all and (max-width: 1024px){
 
     .menu{
         position: relative;
@@ -77,6 +198,12 @@
             width: 50px;
             margin: 5px 0 20px 15px;
             background-color: $tertiary-color;
+        }
+
+        .menuchoice{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
         }
 
         .card{

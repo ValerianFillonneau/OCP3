@@ -1,32 +1,33 @@
 @mixin function {
     background-color: $section-background;
-            margin-bottom: 25px;
-            padding: 30px 40px 25px 40px;
-            border-radius: 20px;
-            box-shadow: $shadow-box;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            .numberlist{
-            background-color: $primary-color;
-            color: white;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            margin: 0 25px 0 -55px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            }
-        .textlist{
-            margin-left: 25px;
-        }
+    margin-bottom: 25px;
+    padding: 30px 40px 25px 40px;
+    border-radius: 20px;
+    box-shadow: $shadow-box;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .numberlist{
+    background-color: $primary-color;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 25px 0 -55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .textlist{
+        margin-left: 25px;
+    }
 }
 
 @mixin menu {
     overflow: hidden;
     display: flex;
-    height: 100%;
+    justify-content: space-between;
+    height: 77px;
     width: 95%;
     margin-left: 2.5%;
     background-color: white;
@@ -35,13 +36,14 @@
     margin: 0 2.5% 20px 2.5%;
     cursor: pointer;
     .legende{
-        width: 370px;
+        width: 80%;
         &__gras{
             font-weight: 700;
             margin: 0 0 0 15px;
         }
         p{
             height: 22px;
+            width: auto;
             margin: 10px 0 10px 15px;
             font-size: 18px;
             display: block;
@@ -55,7 +57,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        width: auto;
+        width: 30px;
         margin-right: 20px;
         font-weight: 700;
     }
