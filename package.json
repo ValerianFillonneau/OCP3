@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ValerianFillonneau/OCP3#readme",
   "dependencies": {
-    "postcss": "^8.2.1"
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1"
   }
 }

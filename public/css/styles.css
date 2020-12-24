@@ -88,6 +88,17 @@ textarea {
   font-weight: 700;
 }
 
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -191,7 +202,8 @@ textarea {
 .bloc__image {
   height: 400px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media all and (max-width: 1024px) {
@@ -215,7 +227,8 @@ textarea {
   .bloc__image {
     height: 400px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* page contact */
@@ -285,7 +298,8 @@ textarea {
   height: 230px;
   width: 100%;
   border-radius: 15px 15px 0 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurantall .restaurant .legende {
   display: flex;
@@ -300,7 +314,7 @@ textarea {
 .restaurantall .restaurant .heart {
   display: flex;
   justify-content: flex-end;
-  align-self: left;
+  align-self: flex-end;
   font-size: 20px;
   cursor: pointer;
 }
@@ -355,7 +369,8 @@ textarea {
     height: 230px;
     width: 100%;
     border-radius: 15px 15px 0 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .restaurantall .restaurant .legende {
     display: flex;
@@ -370,7 +385,7 @@ textarea {
   .restaurantall .restaurant .heart {
     display: flex;
     justify-content: flex-end;
-    align-self: left;
+    align-self: flex-end;
     font-size: 20px;
     cursor: pointer;
   }
@@ -406,9 +421,7 @@ footer {
 }
 footer ul {
   list-style-type: none;
-  padding-inline-start: 0;
   padding-left: 20px;
-  margin-block-end: 0;
 }
 footer ul li {
   text-decoration: none;
@@ -431,7 +444,8 @@ footer .logo_footer {
   margin: 0 0 20px 20px;
   padding-top: 20px;
   height: 20px;
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 footer__text {
   margin-left: 5px;
@@ -445,9 +459,7 @@ footer__text {
   }
   footer ul {
     list-style-type: none;
-    padding-inline-start: 0;
     padding-left: 20px;
-    margin-block-end: 0;
   }
   footer ul li {
     text-decoration: none;
@@ -470,7 +482,8 @@ footer__text {
     margin: 0 0 20px 20px;
     padding-top: 20px;
     height: 20px;
-    filter: invert(100%);
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
   }
   footer__text {
     margin-left: 5px;
@@ -487,9 +500,7 @@ footer__text {
 }
 .footer-contact ul {
   list-style-type: none;
-  padding-inline-start: 0;
   padding-left: 20px;
-  margin-block-end: 0;
 }
 .footer-contact ul li {
   text-decoration: none;
@@ -512,7 +523,8 @@ footer__text {
   margin: 0 0 20px 20px;
   padding-top: 20px;
   height: 20px;
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 .footer-contact__text {
   margin-left: 5px;
@@ -529,9 +541,7 @@ footer__text {
   }
   .footer-contact ul {
     list-style-type: none;
-    padding-inline-start: 0;
     padding-left: 20px;
-    margin-block-end: 0;
   }
   .footer-contact ul li {
     text-decoration: none;
@@ -554,7 +564,8 @@ footer__text {
     margin: 0 0 20px 20px;
     padding-top: 20px;
     height: 20px;
-    filter: invert(100%);
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
   }
   .footer-contact__text {
     margin-left: 5px;
@@ -584,11 +595,9 @@ body {
 .function {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-inline-start: 25px;
-  padding-inline-end: 25px;
+  justify-content: space-evenly;
   margin: auto;
-  padding-bottom: 40px;
+  padding: 0 0 40px 0;
 }
 .function > :hover {
   background-color: #F5E9FF;
@@ -655,8 +664,6 @@ a {
   .function {
     display: flex;
     flex-direction: column;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
     max-width: 500px;
     margin: auto;
   }
@@ -718,7 +725,6 @@ a {
   font-family: Shrikhand, sans-serif;
 }
 .menu .titreresto {
-  margin-block-start: 0;
   padding-top: 50px;
   font-size: 30px;
   margin-left: 20px;
@@ -776,8 +782,10 @@ a {
   box-shadow: 3px 5px 10px #9E9D9D;
   margin: 0 2.5% 20px 2.5%;
   cursor: pointer;
-  animation: fadein 750ms linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadein 750ms linear;
+          animation: fadein 750ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .menu .menuchoice .card .legende {
   width: 80%;
@@ -790,7 +798,8 @@ a {
   margin: 0 0 0 15px;
 }
 .menu .menuchoice .card .legende p {
-  animation: textreduction 750ms ease-in-out;
+  -webkit-animation: textreduction 750ms ease-in-out;
+          animation: textreduction 750ms ease-in-out;
   height: 22px;
   width: auto;
   margin: 10px 0 10px 15px;
@@ -841,19 +850,23 @@ a {
   white-space: nowrap;
 }
 .menu .menuchoice .card:nth-child(3) {
-  animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
   min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(4) {
-  animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(5) {
-  animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
   min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(6) {
-  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
   min-width: 320px;
 }
 .menu .valid {
@@ -921,7 +934,6 @@ a {
     font-family: Shrikhand, sans-serif;
   }
   .menu .titreresto {
-    margin-block-start: 0;
     padding-top: 50px;
     font-size: 30px;
     margin-left: 20px;
@@ -979,8 +991,10 @@ a {
     box-shadow: 3px 5px 10px #9E9D9D;
     margin: 0 2.5% 20px 2.5%;
     cursor: pointer;
-    animation: fadein 750ms linear;
-    animation-fill-mode: forwards;
+    -webkit-animation: fadein 750ms linear;
+            animation: fadein 750ms linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .menu .card .legende {
     width: 80%;
@@ -993,7 +1007,8 @@ a {
     margin: 0 0 0 15px;
   }
   .menu .card .legende p {
-    animation: textreduction 750ms ease-in-out;
+    -webkit-animation: textreduction 750ms ease-in-out;
+            animation: textreduction 750ms ease-in-out;
     height: 22px;
     width: auto;
     margin: 10px 0 10px 15px;
@@ -1044,16 +1059,20 @@ a {
     white-space: nowrap;
   }
   .menu .card:nth-child(3) {
-    animation-delay: 250ms;
+    -webkit-animation-delay: 250ms;
+            animation-delay: 250ms;
   }
   .menu .card:nth-child(4) {
-    animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
   }
   .menu .card:nth-child(5) {
-    animation-delay: 750ms;
+    -webkit-animation-delay: 750ms;
+            animation-delay: 750ms;
   }
   .menu .card:nth-child(6) {
-    animation-delay: 1000ms;
+    -webkit-animation-delay: 1000ms;
+            animation-delay: 1000ms;
   }
   .menu .valid {
     background-color: #99E2D0;
@@ -1276,5 +1295,3 @@ a {
     box-shadow: 3px 5px 10px #9E9D9D;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

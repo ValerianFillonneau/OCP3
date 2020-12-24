@@ -22,11 +22,9 @@ body{
 .function{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
+    justify-content: space-evenly;
     margin: auto;
-    padding-bottom: 40px;
+    padding: 0 0 40px 0;
     >:hover{
         background-color: $hover-color;
         .iconelist{
@@ -73,8 +71,6 @@ a{
     .function{
         display: flex;
         flex-direction: column;
-        padding-inline-start: 25px;
-        padding-inline-end: 25px;
         max-width: 500px;
         margin: auto;
         >:hover{
