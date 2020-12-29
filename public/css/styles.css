@@ -36,7 +36,7 @@ h2 {
 .function__card {
   display: flex;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.15em;
 }
 .function__card .numberlist {
   color: white;
@@ -728,6 +728,7 @@ a {
     flex-direction: column;
     max-width: 500px;
     margin: auto;
+    width: 90%;
   }
   .function > :hover {
     background-color: #F5E9FF;

@@ -104,6 +104,7 @@ a{
         flex-direction: column;
         max-width: 500px;
         margin: auto;
+        width: 90%;
         >:hover{
             background-color: $hover-color;
             .iconelist{
