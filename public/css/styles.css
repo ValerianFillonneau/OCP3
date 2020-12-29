@@ -88,7 +88,7 @@ textarea {
   font-weight: 700;
 }
 
-@-webkit-keyframes fadein {
+@keyframes fadein {
   0% {
     opacity: 0;
     transform: translateY(20px);
@@ -98,15 +98,58 @@ textarea {
     transform: translateY(0px);
   }
 }
-
-@keyframes fadein {
+@keyframes visibility {
   0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
     opacity: 0;
-    transform: translateY(20px);
   }
   100% {
+    opacity: 0;
+  }
+}
+@keyframes visibility2 {
+  0% {
+    opacity: 0;
+  }
+  21% {
+    opacity: 0;
+  }
+  22% {
     opacity: 1;
-    transform: translateY(0px);
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes visibility3 {
+  0% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  44% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*page d'accueil*/
@@ -202,8 +245,7 @@ textarea {
 .bloc__image {
   height: 400px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media all and (max-width: 1024px) {
@@ -227,8 +269,7 @@ textarea {
   .bloc__image {
     height: 400px;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 /* page contact */
@@ -298,8 +339,7 @@ textarea {
   height: 230px;
   width: 100%;
   border-radius: 15px 15px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurantall .restaurant .legende {
   display: flex;
@@ -369,8 +409,7 @@ textarea {
     height: 230px;
     width: 100%;
     border-radius: 15px 15px 0 0;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .restaurantall .restaurant .legende {
     display: flex;
@@ -444,8 +483,7 @@ footer .logo_footer {
   margin: 0 0 20px 20px;
   padding-top: 20px;
   height: 20px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
 footer__text {
   margin-left: 5px;
@@ -482,8 +520,7 @@ footer__text {
     margin: 0 0 20px 20px;
     padding-top: 20px;
     height: 20px;
-    -webkit-filter: invert(100%);
-            filter: invert(100%);
+    filter: invert(100%);
   }
   footer__text {
     margin-left: 5px;
@@ -523,8 +560,7 @@ footer__text {
   margin: 0 0 20px 20px;
   padding-top: 20px;
   height: 20px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
 .footer-contact__text {
   margin-left: 5px;
@@ -564,8 +600,7 @@ footer__text {
     margin: 0 0 20px 20px;
     padding-top: 20px;
     height: 20px;
-    -webkit-filter: invert(100%);
-            filter: invert(100%);
+    filter: invert(100%);
   }
   .footer-contact__text {
     margin-left: 5px;
@@ -585,6 +620,33 @@ html {
 
 body {
   margin: 0;
+}
+
+.loading__page {
+  font-family: Shrikhand, sans-serif;
+  font-size: 2.75em;
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: visibility 2s ease 0s;
+}
+.loading__page .dot1 {
+  animation: visibility 3s linear infinite;
+}
+.loading__page .dot2 {
+  animation: visibility2 3s linear infinite;
+}
+.loading__page .dot3 {
+  animation: visibility3 3s linear infinite;
 }
 
 .titre-index {
@@ -782,10 +844,8 @@ a {
   box-shadow: 3px 5px 10px #9E9D9D;
   margin: 0 2.5% 20px 2.5%;
   cursor: pointer;
-  -webkit-animation: fadein 750ms linear;
-          animation: fadein 750ms linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadein 750ms linear;
+  animation-fill-mode: forwards;
 }
 .menu .menuchoice .card .legende {
   width: 80%;
@@ -798,8 +858,7 @@ a {
   margin: 0 0 0 15px;
 }
 .menu .menuchoice .card .legende p {
-  -webkit-animation: textreduction 750ms ease-in-out;
-          animation: textreduction 750ms ease-in-out;
+  animation: textreduction 750ms ease-in-out;
   height: 22px;
   width: auto;
   margin: 10px 0 10px 15px;
@@ -850,23 +909,19 @@ a {
   white-space: nowrap;
 }
 .menu .menuchoice .card:nth-child(3) {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
   min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(4) {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  animation-delay: 500ms;
   min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(5) {
-  -webkit-animation-delay: 750ms;
-          animation-delay: 750ms;
+  animation-delay: 750ms;
   min-width: 320px;
 }
 .menu .menuchoice .card:nth-child(6) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  animation-delay: 1000ms;
   min-width: 320px;
 }
 .menu .valid {
@@ -991,10 +1046,8 @@ a {
     box-shadow: 3px 5px 10px #9E9D9D;
     margin: 0 2.5% 20px 2.5%;
     cursor: pointer;
-    -webkit-animation: fadein 750ms linear;
-            animation: fadein 750ms linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation: fadein 750ms linear;
+    animation-fill-mode: forwards;
   }
   .menu .card .legende {
     width: 80%;
@@ -1007,8 +1060,7 @@ a {
     margin: 0 0 0 15px;
   }
   .menu .card .legende p {
-    -webkit-animation: textreduction 750ms ease-in-out;
-            animation: textreduction 750ms ease-in-out;
+    animation: textreduction 750ms ease-in-out;
     height: 22px;
     width: auto;
     margin: 10px 0 10px 15px;
@@ -1059,20 +1111,16 @@ a {
     white-space: nowrap;
   }
   .menu .card:nth-child(3) {
-    -webkit-animation-delay: 250ms;
-            animation-delay: 250ms;
+    animation-delay: 250ms;
   }
   .menu .card:nth-child(4) {
-    -webkit-animation-delay: 500ms;
-            animation-delay: 500ms;
+    animation-delay: 500ms;
   }
   .menu .card:nth-child(5) {
-    -webkit-animation-delay: 750ms;
-            animation-delay: 750ms;
+    animation-delay: 750ms;
   }
   .menu .card:nth-child(6) {
-    -webkit-animation-delay: 1000ms;
-            animation-delay: 1000ms;
+    animation-delay: 1000ms;
   }
   .menu .valid {
     background-color: #99E2D0;
@@ -1295,3 +1343,5 @@ a {
     box-shadow: 3px 5px 10px #9E9D9D;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

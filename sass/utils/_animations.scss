@@ -45,3 +45,60 @@
         transform: translateY(0px);
     }
 }
+
+@keyframes visibility {
+    0% {
+    opacity: 1;
+    }
+    65% {
+    opacity: 1;
+    }
+    66% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 0;
+    }
+}
+
+@keyframes visibility2 {
+    0% {
+        opacity: 0;
+    }
+    21% {
+        opacity: 0;
+    }
+    22% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes visibility3 {
+    0% {
+     opacity: 0;
+    }
+    43% {
+     opacity: 0;
+    }
+    44% {
+     opacity: 1;
+    }
+    65% {
+     opacity: 1;
+    }
+    66% {
+     opacity: 0;
+    }
+    100% {
+     opacity: 0;
+    }
+}

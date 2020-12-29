@@ -14,6 +14,37 @@ body{
     margin: 0;
 }
 
+.loading{
+    &__page{
+        font-family: $font-title;
+        font-size: 2.75em;
+        position: absolute;
+        z-index: 99999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        transition: visibility 2s ease 0s;
+        .dot1 {
+            animation: visibility 3s linear infinite;
+        }
+               
+        .dot2 {
+            animation: visibility2 3s linear infinite;
+        }
+            
+        .dot3 {
+            animation: visibility3 3s linear infinite;
+        }
+    }
+}
+
 .titre-index{
     margin-left: 15px;
     padding: 40px 0 40px 0;
