@@ -102,3 +102,17 @@
      opacity: 0;
     }
 }
+
+@keyframes visibility-loading {
+    0% {
+        visibility: visible;
+    }
+
+    90% {
+        visibility: visible;
+    }
+
+    100%{
+        visibility: hidden;
+    }
+}

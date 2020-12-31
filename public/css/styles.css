@@ -152,6 +152,17 @@ textarea {
     opacity: 0;
   }
 }
+@keyframes visibility-loading {
+  0% {
+    visibility: visible;
+  }
+  90% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 /*page d'accueil*/
 .header_accueil {
   width: 100%;
@@ -625,19 +636,18 @@ body {
 .loading__page {
   font-family: Shrikhand, sans-serif;
   font-size: 2.75em;
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  left: 0;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  transition: visibility 2s ease 0s;
+  animation: visibility-loading 2s normal forwards;
 }
 .loading__page .dot1 {
   animation: visibility 3s linear infinite;
