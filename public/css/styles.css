@@ -647,15 +647,19 @@ body {
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  -webkit-animation: visibility-loading 2s normal forwards;
   animation: visibility-loading 2s normal forwards;
 }
 .loading__page .dot1 {
+  -webkit-animation: visibility 3s linear infinite;
   animation: visibility 3s linear infinite;
 }
 .loading__page .dot2 {
+  -webkit-animation: visibility2 3s linear infinite;
   animation: visibility2 3s linear infinite;
 }
 .loading__page .dot3 {
+  -webkit-animation: visibility3 3s linear infinite;
   animation: visibility3 3s linear infinite;
 }
 

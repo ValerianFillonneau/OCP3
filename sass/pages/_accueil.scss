@@ -29,17 +29,21 @@ body{
         justify-content: center;
         align-items: center;
         visibility: hidden;
-        animation: visibility-loading 2s normal forwards;
+        -webkit-animation: visibility-loading 2s normal forwards;
+                animation: visibility-loading 2s normal forwards;
         .dot1 {
-            animation: visibility 3s linear infinite;
+            -webkit-animation: visibility 3s linear infinite;
+                    animation: visibility 3s linear infinite;
         }
                
         .dot2 {
-            animation: visibility2 3s linear infinite;
+            -webkit-animation: visibility2 3s linear infinite;
+                    animation: visibility2 3s linear infinite;
         }
             
         .dot3 {
-            animation: visibility3 3s linear infinite;
+            -webkit-animation: visibility3 3s linear infinite;
+                    animation: visibility3 3s linear infinite;
         }
     }
 }
